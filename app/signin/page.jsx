@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-export const metadata = {
+const metadata = {
   title: "Toodly | signin",
   description: "Organize Better",
 };

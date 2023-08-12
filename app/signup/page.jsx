@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-export const metadata = {
+const metadata = {
   title: "Toodly | signup",
   description: "Organize Better",
 };

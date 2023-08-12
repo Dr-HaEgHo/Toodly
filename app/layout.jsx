@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 import { createContext, useEffect, useReducer, useState } from "react";
 import reducer from "@/hooks/useReducer";
 
-export const metadata = {
+const metadata = {
   title: "Toodly",
   description: "Organize Better",
 };
