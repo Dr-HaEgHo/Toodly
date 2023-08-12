@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app{
+    @apply bg-[#fafafa] min-h-screen
+}
+
+.container {
+  @apply  w-full max-w-[900px] 2xl:max-w-[1200px] mx-auto
+}
+
+.half-container {
+  @apply w-1/2 rounded-[16px] overflow-hidden
+}
+
+.input{
+  @apply  w-full border border-inputBorder px-2 py-[12px] 2xl:py-[16px]  rounded-lg focus:outline-none font-lexend text-sm text-appBlack autofill:font-lexend autofill:bg-none
+}
+
+.dropDownElement{
+  @apply w-full p-2 py-[10px] font-lexend text-sm text-darkGray cursor-pointer hover:bg-iconGrayLight transition duration-200
+}
+
+.yellow-btn{
+    @apply bg-appYellow w-full rounded-lg font-lexend font-[500] text-sm p-3 2xl:p-4 cursor-pointer transform transition duration-200 hover:-translate-y-1 active:-translate-y-1
+}
+ 
+.fkdlf{
+    color: #dadada
+}
+
+.drop-scroll{
+    overflow-y: scroll;
+}
+
+.drop-scroll::-webkit-scrollbar{
+    width: 4px
+}
+
+.drop-scroll::-webkit-scrollbar-thumb{
+    background: #7c7c7c;
+}
+
+
+.fvk{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-self: stretch;
+    width: 330px;
+    height: 852px;
+    opacity: 1;
+    background-color: #f4f4f4;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+    border: 0px;
+}
