@@ -43,33 +43,33 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
 
   const router = useRouter();
 
-  const [location, setLocation] = useState("")
-  const [windowDimenion, detectHW] = useState({
-      winWidth: window.innerWidth,
-      winHeight: window.innerHeight,
-    });
+  const [location, setLocation] = useState("/dashboard")
+  // const [windowDimenion, detectHW] = useState({
+  //     winWidth: window.innerWidth,
+  //     winHeight: window.innerHeight,
+  //   });
 
-    const detectSize = () => {
-      detectHW({
-        winWidth: window.innerWidth,
-        winHeight: window.innerHeight,
-      });
-  };
+  //   const detectSize = () => {
+  //     detectHW({
+  //       winWidth: window.innerWidth,
+  //       winHeight: window.innerHeight,
+  //     });
+  // };
   
 
 
-    useEffect(() => {
-      window.addEventListener("resize", detectSize);
-      //conole.log(windowDimenion);
-      return () => {
-        window.removeEventListener("resize", detectSize);
-      };
-    }, [windowDimenion]);
+    // useEffect(() => {
+    //   window.addEventListener("resize", detectSize);
+    //   //conole.log(windowDimenion);
+    //   return () => {
+    //     window.removeEventListener("resize", detectSize);
+    //   };
+    // }, [windowDimenion]);
 
-  useEffect(() => { 
-    const getLocation = window.location.pathname;
-    setLocation(getLocation) 
-  },[])
+  // useEffect(() => { 
+  //   const getLocation = window.location.pathname;
+  //   setLocation(getLocation) 
+  // },[])
 
   useEffect(() => { 
     const handler = () => {
@@ -81,7 +81,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
     };
   },[])
 
-  console.log("location", location);
 
   let numbers = [8, 6, 3, 2]
 
@@ -99,7 +98,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
           <HambergerMenu
             onClick={() => setSidebarOpen((v) => !v)}
             className="text-2xl text-darkGray cursor-pointer"
-            size={windowDimenion.winWidth > 1370 ? "32" : "22"}
+            size="22"
             variant="Outline"
           />
         </div>
@@ -108,7 +107,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
         <div className="w-full flex items-center gap-1 border border-borderline px-2 2xl:px-4 py-2 rounded-[8px] mb-5 2xl:mb-8">
           <SearchNormal1
             className="text-iconGray"
-            size={windowDimenion.winWidth > 1370 ? "16" : "14"}
+            size="12"
             variant="Outline"
           />
           <input
