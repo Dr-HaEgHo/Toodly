@@ -1,4 +1,5 @@
 import { Context } from "@/app/layout";
+import Image from "next/image";
 import React, { useContext, useEffect, useState } from "react";
 
 const Loader = () => {
@@ -28,9 +29,19 @@ const Loader = () => {
   return (
     <div
       id="loader"
-      className="w-full transition opacity-100 duration-[1s] h-screen flex items-center justify-center"
+      className="w-full z-50 transition opacity-100 duration-[1s] h-screen absolute bg-whiteBg flex flex-col items-center justify-center"
     >
-      <p>LOADING {count} </p>
+      <div className="flex flex-col items-center ">
+        <Image
+          src={require("@/assets/icons/ajax-loader.gif")}
+          width={80}
+          height={80}
+        />
+        <p className="">
+          <span>Toodly.</span> is bringing you the best
+        </p>
+        <p>please wait...</p>
+      </div>
     </div>
   );
 };

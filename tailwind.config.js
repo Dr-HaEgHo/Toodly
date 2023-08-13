@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         whiteBg: "#fafafa",
         borderline: "#ebebeb",
+        borderlineTrans: "#ebebeb40",
         inputBorder: "#dadada",
         appYellow: "#FFD43B",
         appBlack: "#212529",
@@ -23,9 +24,14 @@ module.exports = {
         sidebarBgGray: "#f4f4f4",
         iconGray: "#7c7c7c",
         iconGrayLight: "#7c7c7c40",
+        tagRed: "#FF6B6B",
+        tagRedTrans: "#FF6B6B40",
+        tagblue: "#66D9E8",
+        tagblueTrans: "#66D9E840",
+        tagYellow: "#FFD43B",
+        tagYellowTrans: "#FFD43B40",
       },
-    
     },
   },
-    plugins: [],
-}
+  plugins: [],
+};

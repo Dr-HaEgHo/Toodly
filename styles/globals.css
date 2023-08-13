@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 .app{
-    @apply bg-[#fafafa] min-h-screen
+    @apply bg-[#fafafa] min-h-screen font-lexend
 }
 
 .container {
@@ -46,6 +46,20 @@
     background: #7c7c7c;
 }
 
+.list-header{
+    @apply font-[600] text-[9px] 2xl:text-xs text-darkGray mb-3 2xl:mb-4
+}
+
+.sidebar-btn-active{
+    @apply w-full flex items-center transition duration-200 cursor-pointer bg-borderline rounded-lg p-[10px] gap-4 
+}
+
+.sidebar-btn{
+    @apply w-full flex items-center transition duration-200 cursor-pointer bg-sidebarBgGray rounded-lg p-[10px] gap-4 hover:bg-borderline active:bg-borderlineTrans
+}
+
+
+
 
 .fvk{
     display: flex;
@@ -58,7 +72,7 @@
     width: 330px;
     height: 852px;
     opacity: 1;
-    background-color: #f4f4f4;
+    background-color: #66d9e840;
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
     border: 0px;

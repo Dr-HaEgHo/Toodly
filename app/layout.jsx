@@ -30,7 +30,7 @@ const RootLayout = ({ children }) => {
       <body>
         <Context.Provider value={[state, dispatch]} >
           <main className="app">
-            {/* {isPageLoaded ? null : <Loader />} */}
+            {isPageLoaded ? null : <Loader />}
             {children}
           </main>
         </Context.Provider>
