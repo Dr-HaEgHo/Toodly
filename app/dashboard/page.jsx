@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import { Add, ArrowRight2 } from 'iconsax-react';
 import React from 'react'
 
-const list = [1, 2, 3, 4, 5, 6, 7]
+const list = [1, 2, 3, 4, 5]
 
 const page = () => {
   return (
