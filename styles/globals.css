@@ -51,7 +51,7 @@
 }
 
 .sidebar-btn-active{
-    @apply w-full flex items-center transition duration-200 cursor-pointer bg-borderline rounded-lg p-[10px] gap-4 
+    @apply w-full flex items-center transition duration-200 cursor-pointer bg-borderline rounded-lg p-[10px] gap-4 active:bg-borderlineTrans
 }
 
 .sidebar-btn{

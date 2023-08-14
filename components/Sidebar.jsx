@@ -119,7 +119,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
 
         {/* TASKS */}
         <div className="border-b pb-3 2xl:pb-4">
-          <h3 className="list-header">TASKS</h3>
+          <h3 className="list-header">TASKS</ h3>
           <div className="flex flex-col items-center">
             {tasks?.map((item, idx) => (
               <div
