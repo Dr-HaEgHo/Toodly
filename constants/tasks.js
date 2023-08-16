@@ -2,7 +2,7 @@
 
 export const taskList = [
   {
-    id: Math.round(Math.random() * 100 + Math.random() * 100),
+    id: 1,
     content: "Board Meeting by 2:00PM",
     tag: "work",
     subTasks: [
@@ -26,7 +26,7 @@ export const taskList = [
     isCompleted: false,
   },
   {
-    id: Math.round(Math.random() * 100 + Math.random() * 100),
+    id: 2,
     content: "Research Haemoglobin test centres nearby",
     tag: "personal",
     subTasks: [
@@ -57,7 +57,7 @@ export const taskList = [
     isCompleted: false,
   },
   {
-    id: Math.round(Math.random() * 100 + Math.random() * 100),
+    id: 3,
     content: "Board Meeting by 2:00PM",
     tag: "list 1",
     subTasks: [

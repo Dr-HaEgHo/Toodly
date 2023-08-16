@@ -5,12 +5,14 @@ import { taskList } from '@/constants/tasks';
 // import { Icon } from '@iconify/react';
 import { Add, ArrowRight2 } from 'iconsax-react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
 
 
 const page = () => {
 
+  const router = useRouter()
   const [todayTasks, setTodayTasks] = useState();
 
   console.log(todayTasks);
@@ -48,12 +50,14 @@ const page = () => {
           {/* EACH MAPPED LINE */}
           {todayTasks ? (
             todayTasks.map((item, idx) => (
+              <div onClick={() => router.push(`/dashboard/${item.id}`)} className=" transition duration-200 cursor-pointer rounded-lg hover:bg-sidebarBgGray active:bg-borderline">
               <Task
                 todayTasks={todayTasks}
                 setTodayTasks={setTodayTasks}
                 item={item}
                 key={item.id}
-              />
+                />
+                </div>
             ))
           ) : (
             <div className="w-full h-[100px] flex items-center flex-col justify-center ">
@@ -86,12 +90,14 @@ const page = () => {
             {/* EACH MAPPED LINE */}
             {todayTasks ? (
               todayTasks.map((item, idx) => (
+                <div onClick={() => router.push(`/dashboard/${item.id}`)} className=" transition duration-200 cursor-pointer rounded-lg hover:bg-sidebarBgGray active:bg-borderline">
                 <Task
                   todayTasks={todayTasks}
                   setTodayTasks={setTodayTasks}
                   item={item}
                   key={item.id}
-                />
+                  />
+                  </div>
               ))
             ) : (
               <div className="w-full h-[100px] flex items-center flex-col justify-center ">
@@ -125,12 +131,14 @@ const page = () => {
             {/* EACH MAPPED LINE */}
             {todayTasks ? (
               todayTasks.map((item, idx) => (
+                <div onClick={() => router.push(`/dashboard/${item.id}`)} className=" transition duration-200 cursor-pointer rounded-lg hover:bg-sidebarBgGray active:bg-borderline">
                 <Task
                   todayTasks={todayTasks}
                   setTodayTasks={setTodayTasks}
                   item={item}
                   key={item.id}
-                />
+                  />
+                  </div>
               ))
             ) : (
               <div className="w-full h-[100px] flex items-center flex-col justify-center ">

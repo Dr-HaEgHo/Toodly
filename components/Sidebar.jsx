@@ -2,7 +2,7 @@ import { HambergerMenu, SearchNormal1 } from 'iconsax-react';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import { Icon } from '@iconify/react';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useRouter as useR } from 'next/router';
 import { taskList } from '@/constants/tasks';
 
@@ -44,7 +44,12 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
 
   const router = useRouter();
 
-  const [location, setLocation] = useState("/dashboard")
+  const location = usePathname(0)
+
+
+  
+
+  // const [location, setLocation] = useState("/dashboard")
   // const [windowDimenion, detectHW] = useState({
   //     winWidth: window.innerWidth,
   //     winHeight: window.innerHeight,
@@ -136,7 +141,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 />
                 <h4 className="text-xs 2xl:text-base text-darkGray flex-1 ">
                   {item.title}
-                </h4>
+                </h4> 
                 {numbers && (
                   <div
                     className={`w-6 ${

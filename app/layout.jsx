@@ -17,6 +17,9 @@ const RootLayout = ({ children }) => {
 
     const [state, dispatch] = useReducer(reducer, initialState);
     const [loaded, setLoaded] = useState(false)
+    const [count, setCount] = useState([])
+  
+
 
     useEffect(() => {
       setLoaded(true);
@@ -29,9 +32,10 @@ const RootLayout = ({ children }) => {
     <html>
       <body>
         <Context.Provider value={[state, dispatch]} >
-          <main className="app">
-            {/* {isPageLoaded ? null : <Loader />} */}
+          <main className="app ">
+            {isPageLoaded ? null : <Loader />}
             {children}
+            
           </main>
         </Context.Provider>
       </body>
@@ -40,3 +44,4 @@ const RootLayout = ({ children }) => {
 };
 
 export default RootLayout;
+ 
