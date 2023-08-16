@@ -39,7 +39,7 @@ const layout = ({ children }) => {
         <div className="fixed top-0 flex py-[1rem] 2xl:py-[1.4rem] pr-[1rem] 2xl:pr-[1.4rem] bg-whiteBg">
           <Header />
         </div>
-        <div className="mt-[5rem]">{children}</div>
+        <div className="mt-[6rem]">{children}</div>
       </div>
     </div>
   );

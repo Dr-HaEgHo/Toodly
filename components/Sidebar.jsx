@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { Icon } from '@iconify/react';
 import { useRouter } from 'next/navigation';
 import { useRouter as useR } from 'next/router';
+import { taskList } from '@/constants/tasks';
 
 const tasks = [
   {
@@ -82,7 +83,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   },[])
 
 
-  let numbers = [8, 6, 3, 2]
+  let numbers = [taskList.length * 3, taskList.length, "", ""];
 
   
 

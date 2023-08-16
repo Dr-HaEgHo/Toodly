@@ -26,7 +26,7 @@ module.exports = {
         iconGrayLight: "#7c7c7c40",
         tagRed: "#FF6B6B",
         tagRedTrans: "#FF6B6B40",
-        tagblue: "#66D9E8",
+        tagBlue: "#66D9E8",
         tagblueTrans: "#66D9E840",
         tagYellow: "#FFD43B",
         tagYellowTrans: "#FFD43B40",

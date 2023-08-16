@@ -78,9 +78,10 @@ const page = () => {
       <div className="w-full h-full flex items-center">
         <div className="flex w-full gap-4 flex-nowrap">
           {/* THE PICTURE AREA */}
-          <div className="half-container ">
+          <div className="half-container relative">
+            <h2 className="text-[28px] text-whiteBg absolute top-3 right-6 font-[600] " >Toodly.</h2>
             <Image
-              src={require("../../assets/images/organicmind.png")}
+              src={require("../../assets/images/toodly.png")}
               width={684}
               height={852}
             />
