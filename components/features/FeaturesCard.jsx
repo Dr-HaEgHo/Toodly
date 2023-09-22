@@ -1,6 +1,6 @@
 "useClient"
-import Lottie from "lottie-react";
-import seperatorAnimation from "@/components/Shared/seperator.json";
+// import Lottie from "lottie-react";
+// import seperatorAnimation from "@/components/Shared/seperator.json";
 import {motion as m} from 'framer-motion'
 import { useEffect, useState } from "react";
 
