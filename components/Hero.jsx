@@ -42,13 +42,13 @@ const Hero = ({ handleGetStarted }) => {
 
 
       <div className="flex flex-col md:flex-row items-center mt-10 gap-4" >
-        <button
+        <a href='/signup' ><button
           onClick={handleGetStarted}
           className="yellow-btn text-center max-w-[300px] min-w-[200px]  flex items-center gap-2"
         >
           <Global size="26" color="#212529" variant='Bold' />
           Get for web
-        </button>
+        </button></a>
         <button
           className="line-btn text-center max-w-[300px] min-w-[200px] flex items-center gap-2"
         >
