@@ -26,7 +26,15 @@
 }
 
 .yellow-btn {
-  @apply bg-appYellow w-full rounded-lg font-lexend font-[500] text-sm p-3 2xl:p-4 cursor-pointer transform transition duration-200 hover:-translate-y-1 active:-translate-y-1;
+  @apply bg-appYellow w-full rounded-full font-lexend font-[500] text-xs p-3 2xl:p-4 py-3 flex items-center justify-center cursor-pointer transform transition duration-200 hover:-translate-y-1 active:translate-y-0;
+}
+
+.line-btn {
+  @apply  w-full rounded-full whitespace-nowrap border border-darkGray font-lexend font-[500] text-xs p-3 2xl:p-4 flex items-center justify-center cursor-pointer transform transition duration-200 hover:-translate-y-1 active:translate-y-0;
+}
+
+.shadow-btn {
+  @apply  bg-white w-full rounded-lg font-lexend font-[500] text-xs p-3 2xl:p-4 flex items-center justify-center cursor-pointer transform transition duration-200 hover:-translate-y-1 active:translate-y-0;
 }
 
 .fkdlf {
@@ -91,3 +99,47 @@ z-index: 0;
     linear-gradient(to bottom, #ebebeb 1px, transparent 1px);
 }
 
+.switch{
+    animation: switch 0.5s ease-in-out 0 1 linear;
+}
+
+
+/* Shimmering */
+
+.shimmer {
+    position: relative;
+    background-color: rgba(204, 153, 51, 0.6);
+    padding: 15px 40px;
+    width: 100%;
+    animation-duration: 5.8s;
+    animation-iteration-count: infinite;
+    animation-name: shimmering;
+}
+
+@keyframes shimmering {
+    0% {
+        background-color: rgb(204, 153, 51, 0.6);
+        transition: 0.2s all ease-in-out;
+    }
+    25% {
+        background-color: rgba(204, 153, 51, 0.4);
+        transition: 0.2s all ease-in-out;
+    }
+    50% {
+        background-color: rgb(204, 153, 51, 0.6);
+        transition: 0.2s all ease-in-out;
+    }
+    75% {
+        background-color: rgba(204, 153, 51, 0.4);
+        transition: 0.2s all ease-in-out;
+    }
+}
+
+@keyframes switch {
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}

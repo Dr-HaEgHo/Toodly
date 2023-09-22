@@ -50,7 +50,7 @@ const page = () => {
           {/* EACH MAPPED LINE */}
           {todayTasks ? (
             todayTasks.map((item, idx) => (
-              <div onClick={() => router.push(`/dashboard/${item.id}`)} className=" transition duration-200 cursor-pointer rounded-lg hover:bg-sidebarBgGray active:bg-borderline">
+              <div className=" transition duration-200 cursor-pointer rounded-lg hover:bg-sidebarBgGray active:bg-borderline">
               <Task
                 todayTasks={todayTasks}
                 setTodayTasks={setTodayTasks}
@@ -65,6 +65,7 @@ const page = () => {
               <p clsssName="text-sm 2xl:text-">Oops, You have no todos yet</p>
             </div>
           )}
+          
         </div>
       </div>
 

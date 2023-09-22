@@ -1,12 +1,12 @@
 import { useSearchParams } from 'next/navigation';
 import React from 'react'
 
-const page = () => {
 
-  const params = useSearchParams().id
+const page = ({params}) => {
+
 
   return (
-    <div>page</div>
+      <div>page {params.id}</div>
   )
 }
 

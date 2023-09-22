@@ -125,7 +125,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
 
         {/* TASKS */}
         <div className="border-b pb-3 2xl:pb-4">
-          <h3 className="list-header">TASKS</ h3>
+          <h3 className="list-header">TASKS</h3>
           <div className="flex flex-col items-center">
             {tasks?.map((item, idx) => (
               <div
@@ -141,7 +141,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 />
                 <h4 className="text-xs 2xl:text-base text-darkGray flex-1 ">
                   {item.title}
-                </h4> 
+                </h4>
                 {numbers && (
                   <div
                     className={`w-6 ${
@@ -209,7 +209,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
         <div className="w-full flex items-center transition duration-200 cursor-pointer hover:bg-borderline rounded-lg p-[10px] gap-4">
           <Icon
             className="text-xs 2xl:text-base text-darkGray"
-            icon="io:plus"
+            icon="mingcute:settings-2-line"
           />
           <h4 className="text-xs 2xl:text-base text-darkGray flex-1 ">
             Settings

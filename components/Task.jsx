@@ -1,8 +1,11 @@
 import { taskList } from '@/constants/tasks';
 import { ArrowDown2, ArrowRight2, TickSquare } from 'iconsax-react';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 
 const Task = ({ item, todayTasks, setTodayTasks}) => {
+
+  const router = useRouter();
   const [task, setTask] = useState(item);
   const [tasks, setTasks] = useState(taskList);
 
@@ -37,7 +40,7 @@ const Task = ({ item, todayTasks, setTodayTasks}) => {
       {/* TOP LINE WITH CHECK BOX AND ALL */}
       <div className="w-full flex items-center justify-between px-4 py-2">
         {/* CHECK BOX AND DESCRIPTION */}
-        <div className="flex items-center gap-3 ">
+        <div className="flex flex-1 items-center gap-3 ">
           {/* CHECKBOX ICON DIV */}
           <div onClick={handleCompleted} className="w-4 h-4">
             {task.isCompleted === true ? (
@@ -48,7 +51,10 @@ const Task = ({ item, todayTasks, setTodayTasks}) => {
           </div>
 
           {/* DESCRIPTION */}
-          <div className="w-full ">
+          <div
+            onClick={() => router.push(`/dashboard/${task.id}`)}
+            className="w-[100%] "
+          >
             <p
               className={`text-sm 2xl:text-base text-darkGray ${
                 task.isCompleted === true && "line-through"
@@ -76,6 +82,7 @@ const Task = ({ item, todayTasks, setTodayTasks}) => {
 
       {/* SECOND LINE WITH DATE AND OTHER INFO */}
       <div
+        onClick={() => router.push(`/dashboard/${task.id}`)}
         style={{
           height: task.isOpened === true ? "50px" : "0px",
           padding: task.isOpened === true ? "8px 0 8px 44px" : "0px",
